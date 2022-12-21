@@ -1,0 +1,274 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #1f6e0f;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --azul: #1B22BB;
+}
+
+#map{
+    height: 50vh; 
+}
+.mapita{
+    margin-bottom: 10px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+
+a:hover{
+    color: var(--gris);
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+/** index **/
+
+
+
+/** Header **/
+
+.header {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+
+}
+
+.header__texto {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--azul)
+ }
+
+.header__texto2 {
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.header__texto3 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.botonlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+ @media (min-width: 768px) {
+    .barra {
+        background-color: var(--azul);
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    background-color: var(--azul);
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+
+/* botones */
+.boton-confirmar {
+    color: var(--negro);
+}
+
+.boton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+
+.boton--primario {
+    background-color: var(--negro);
+}
+.boton--secundario {
+    background-color: var(--primario);
+}
+
+.boton--verde {
+    background-color: rgb(19, 100, 19);
+}
+
+.boton-eliminar {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1.5rem 3.7rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(136, 4, 4);
+    width: 100%;
+}
+
+.boton-modificar{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: rgb(19, 100, 19);
+}
+
+/*formulario*/
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.campo__field-2{
+    flex: 1;
+    border: 1px solid var(--gris);
+    text-align: center;
+    font-family: var(--fuenteHeading);
+}
+
+.campo__label__textarea{
+    display: block;
+    text-align: center;
+}
+
+textarea{
+    width: 100%;
+}
+
+.mapita{
+    margin: 0 auto;
+}
+
+/* EXTRAS */
+.texto{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.texto2{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ALERTAS */
+
+.alerta {
+    padding: .5rem;
+    text-align: center;
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+
+}
+
+.error {
+    background-color: rgb(152, 9, 9);
+}
+
+.exito {
+    background-color: rgb(9, 96, 9);
+}

@@ -1,0 +1,269 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #1f6e0f;
+    --gris: #303030;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --azul: #1B22BB;
+    --amarillo: #fffb06;
+    --rojo:#8f2011;
+}
+
+#map{
+    height: 50vh;
+    width: 100%; 
+    margin: 0 auto;
+    border: 5px solid #8f2011;
+}
+
+#select-location{
+    margin-bottom: 10px;
+}
+
+
+.centrar-texto{
+    text-align: center;
+}
+
+body{
+    background: rgb(25,0,0);
+    background: linear-gradient(90deg, rgba(25,0,0,1) 0%, rgba(68,2,2,1) 38%, rgba(0,3,66,1) 69%, rgba(1,0,19,1) 100%);
+    color: var(--blanco);
+    font-family: var(--fuenteHeading);
+}
+
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 1s;
+    color: var(--amarillo);
+}
+a:hover{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--amarillo);
+}
+
+
+
+/** Header **/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .logodef{
+        width: 410px;
+        height: 170px;
+    }    
+}
+
+
+
+/*barra de navegacion*/
+    
+
+@media (min-width: 768px) {
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-content: center;
+        column-gap: 1rem;
+    }    
+}
+
+@media (min-width: 768px) {
+    .logo{
+        margin-left: 32%;
+        margin-right: 32%;
+    }    
+}
+
+.tarjeta{
+    background-color: var(--gris);
+    border: 5px solid #8f2011;
+    margin-bottom: 30px;
+    padding: 5px;
+    margin-top: 1px;
+}
+
+.logoimagen{
+    width: 46px;
+    height: 46px;
+}
+
+.navegacion__enlace {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--blanco);
+}
+   
+
+
+/* arreglando el datatables */
+
+table th {
+    background-color: #8f2011 !important;
+    color: rgb(255, 255, 255);
+}
+
+td,label,p,.dataTables_info{
+    color: #000000;
+}
+
+
+
+
+table>tbody>tr>td {
+    vertical-align: middle !important;
+}
+
+.container{
+    margin-bottom: 10px;
+    border: 5px #8f2011 solid;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,217,217,1) 19%, rgba(231,231,255,1) 69%, rgba(253,255,226,1) 100%);
+}
+
+.btn-group, .btn-group-vertical {
+    position: absolute !important;
+}
+
+/* fin de arreglando el datatables */
+
+.block{
+    display: block;
+}
+
+.w-100{
+    width: 100%;
+}
+
+/* ALERTAS */
+
+.alerta {
+    padding: .5rem;
+    text-align: center;
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+
+}
+
+.error {
+    background-color: rgb(152, 9, 9);
+}
+
+.exito {
+    background-color: rgb(9, 96, 9);
+}
+
+
+/*formulario*/
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    color: var(--blanco);
+
+}
+.campo__field {
+    flex: 1;
+    height: 30px;
+    border: 3px solid var(--gris);
+}
+
+.campo__field:hover {
+
+    border: 3px solid var(--gris);
+    transition: all 0.5s;
+}
+
+
+
+.campo__field-2{
+    flex: 1;
+    border: 1px solid var(--gris);
+    text-align: center;
+    font-family: var(--fuenteHeading);
+}
+
+.campo__label__textarea{
+    display: block;
+    text-align: center;
+}
+
+textarea{
+    width: 100%;
+}
+
+.p_formulario{
+    color: var(--blanco);
+}
+
+.formulario label{
+    color: var(--blanco);
+}
+
+
+/* botones */
+
+.boton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+
+.boton--primario {
+    background-color: var(--negro);
+}
+.boton--secundario {
+    background-color: var(--primario);
+}
+
+.boton--verde {
+    background-color: rgb(19, 100, 19);
+}
+
+.botonlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
